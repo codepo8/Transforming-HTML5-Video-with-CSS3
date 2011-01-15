@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta charset="utf-8">
+<title>Transforming video</title>
+<style type="text/css" media="screen">
+  html,body{font-size:14px;font-family:Helvetica,arial,sans-serif;}
+  header,video,footer{display:block;}
+  #stage{width:400px;height:300px;overflow:hidden;position:relative;}
+  video{width:400px;height:300px;position:absolute;top:0;left:0;}
+  #controls{position:relative;width:400px;}
+  #change{position:absolute;right:-100px;top:-300px;width:100px;}
+  button{
+    font-size:150%;text-align:center;
+    display:block;
+  }
+  #change button{width:60px;border:none;background:#fff;}
+  footer{font-size:80%;margin:5em 0;}
+</style>
+</head>
+<body>
+  <div id="boundary">
+  <header><h1>Transforming HTML5 video with CSS3</h1></header>
+
+  <div id="stage">
+    <video>
+      <source src="http://www.archive.org/download/felix_the_cat_the_goos_that_laid_the_golden_egg/felix_the_cat_the_goos_that_laid_the_golden_egg_512kb.mp4" type="mpeg4">
+      <source src="http://www.archive.org/download/felix_the_cat_the_goos_that_laid_the_golden_egg/felix_the_cat_the_goos_that_laid_the_golden_egg.ogv" type="video/ogg">         
+    </video>
+  </div>
+
+  <div id="controls">
+    <button class="play">play</button>
+    <div id="change">
+      <button class="zoomin">+</button>
+      <button class="zoomout">-</button>
+      <button class="left">⇠</button>
+      <button class="right">⇢</button>
+      <button class="up">⇡</button>
+      <button class="down">⇣</button>
+      <button class="rotateleft">⤹</button>
+      <button class="rotateright">⤵</button>
+      <button class="reset">reset</button>
+    </div>
+  </div>
+  <footer>Written by Chris Heilmann, powered by HTML5 and Archive.org</footer>
+  </div>
+  <script src="transformvideo.js"></script>
+</body>
+</html>
+
