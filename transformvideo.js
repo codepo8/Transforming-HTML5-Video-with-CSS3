@@ -4,7 +4,6 @@
   var v = document.getElementsByTagName('video')[0];
   v.style.left = 0;
   v.style.top = 0;
-  v.playbackRate = 1;
   var properties = ['transform', 'WebkitTransform', 'MozTransform',
                     'msTransform', 'OTransform'];
   var prop = 'transform',p;
